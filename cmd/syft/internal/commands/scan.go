@@ -20,11 +20,14 @@ import (
 	"github.com/anchore/syft/cmd/syft/internal/options"
 	"github.com/anchore/syft/cmd/syft/internal/ui"
 	"github.com/anchore/syft/internal"
+	"github.com/anchore/syft/internal/attestation"
 	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/internal/file"
+	internalfile "github.com/anchore/syft/internal/file"
 	"github.com/anchore/syft/internal/log"
 	"github.com/anchore/syft/internal/task"
 	"github.com/anchore/syft/syft"
+	"github.com/anchore/syft/syft/file"
+	"github.com/anchore/syft/syft/pkg"
 	"github.com/anchore/syft/syft/sbom"
 	"github.com/anchore/syft/syft/source"
 	"github.com/anchore/syft/syft/source/sourceproviders"
@@ -206,12 +209,50 @@ func runScan(ctx context.Context, id clio.Identification, opts *scanOptions, use
 	if s == nil {
 		return fmt.Errorf("no SBOM produced for %q", userInput)
 	}
+	if opts.Catalog.AttestationPath != "" {
+		attFile := opts.Catalog.AttestationPath
+		var parser attestation.AttestationParser
+		if strings.HasSuffix(attFile, ".rs.att") {
+			parser = attestation.GetParser("rust")
+		} else if strings.HasSuffix(attFile, ".py.att") {
+			parser = attestation.GetParser("python")
+		}
+		if parser != nil {
+			pkgs, files, err := parser.ParseAttestation(attFile)
+			if err == nil {
+				for _, p := range pkgs {
+					if !packageExists(s.Artifacts.Packages, p) {
+						s.Artifacts.Packages.Add(p)
+					}
+				}
+				if s.Artifacts.FileMetadata == nil {
+					s.Artifacts.FileMetadata = make(map[file.Coordinates]file.Metadata)
+				}
+				for _, f := range files {
+					coord := file.NewCoordinates(string(f.Path), "")
+					if _, exists := s.Artifacts.FileMetadata[coord]; !exists {
+						s.Artifacts.FileMetadata[coord] = f
+					}
+				}
+			}
+		}
+	}
 
 	if err := writer.Write(*s); err != nil {
 		return fmt.Errorf("failed to write SBOM: %w", err)
 	}
 
 	return nil
+}
+
+// packageExists checks if a package with the same name and version exists in the SBOM package collection.
+func packageExists(col *pkg.Collection, candidate pkg.Package) bool {
+	for _, p := range col.Sorted() {
+		if p.Name == candidate.Name && p.Version == candidate.Version && p.Type == candidate.Type {
+			return true
+		}
+	}
+	return false
 }
 
 func getSource(ctx context.Context, opts *options.Catalog, userInput string, sources ...string) (source.Source, error) {
@@ -241,7 +282,7 @@ func getSource(ctx context.Context, opts *options.Catalog, userInput string, sou
 	}
 
 	if opts.Source.File.Digests != nil {
-		hashers, err := file.Hashers(opts.Source.File.Digests...)
+		hashers, err := internalfile.Hashers(opts.Source.File.Digests...)
 		if err != nil {
 			return nil, fmt.Errorf("invalid hash algorithm: %w", err)
 		}

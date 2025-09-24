@@ -1,0 +1,4852 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:942780f6-c120-40b3-990a-00a728c28b4f",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-09-24T05:33:25-04:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "author": "anchore",
+          "name": "syft",
+          "version": "0.0.0-SNAPSHOT-af4d19f8"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "3c07943a28562d3a",
+      "type": "file",
+      "name": "../boringssl-python-cffi/"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "41eefc649396189c",
+      "type": "library",
+      "name": "AppKit",
+      "version": "0.2.8",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0ac00d9241757df5",
+      "type": "library",
+      "name": "Brlapi",
+      "version": "0.8.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "69d46f33a6c558e1",
+      "type": "library",
+      "name": "Cython",
+      "version": "3.0.8",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7ff6e37e95e3bce8",
+      "type": "library",
+      "name": "Jinja2",
+      "version": "3.1.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a06b89f94f558b00",
+      "type": "library",
+      "name": "Mako-1.1.3",
+      "version": "py3.10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "41d928f5f634c51c",
+      "type": "library",
+      "name": "MarkupSafe",
+      "version": "2.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7fd72cdb7f8e07e9",
+      "type": "library",
+      "name": "MarkupSafe",
+      "version": "2.1.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e23b30bbdf21aff9",
+      "type": "library",
+      "name": "Pillow",
+      "version": "10.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c0d01017a5ac2cd8",
+      "type": "library",
+      "name": "Pillow",
+      "version": "9.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3ca6d50d257bed74",
+      "type": "library",
+      "name": "PyGObject",
+      "version": "3.42.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6c51fa8c8442f5b4",
+      "type": "library",
+      "name": "PyJWT",
+      "version": "2.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "72eed49e93be5fc7",
+      "type": "library",
+      "name": "PyNaCl",
+      "version": "1.5.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0cceeca07ac270cb",
+      "type": "library",
+      "name": "PyQt5",
+      "version": "5.15.9",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "20a5b87999201d81",
+      "type": "library",
+      "name": "PyQt5_Qt5",
+      "version": "5.15.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "af93fd0f9114fdad",
+      "type": "library",
+      "name": "PyQt5_sip",
+      "version": "12.13.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2033ad7dd5e29916",
+      "type": "library",
+      "name": "PyYAML",
+      "version": "5.4.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1f268a5f12826994",
+      "type": "library",
+      "name": "Pygments",
+      "version": "2.11.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "30470eca64d04713",
+      "type": "library",
+      "name": "SecretStorage",
+      "version": "3.3.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "59bc8dcb1e787732",
+      "type": "library",
+      "name": "XlsxWriter",
+      "version": "3.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e0771a59bb7f36f3",
+      "type": "library",
+      "name": "altgraph",
+      "version": "0.17.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/anyio@3.5.0?package-id=d3c1b4a592536b54",
+      "type": "library",
+      "name": "anyio",
+      "version": "3.5.0",
+      "cpe": "cpe:2.3:a:python-anyio:python-anyio:3.5.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/anyio@3.5.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-anyio:python_anyio:3.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_anyio:python-anyio:3.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_anyio:python_anyio:3.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-anyio:3.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_anyio:3.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:anyio:python-anyio:3.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:anyio:python_anyio:3.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-anyio:anyio:3.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_anyio:anyio:3.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:anyio:3.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:anyio:anyio:3.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/frozen_requirements.txt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dd7bccd6db778fce",
+      "type": "library",
+      "name": "anyio",
+      "version": "4.9.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e53635fd8d7fbf15",
+      "type": "library",
+      "name": "apturl",
+      "version": "0.5.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e9caec5f5b158fc8",
+      "type": "library",
+      "name": "argon2_cffi_bindings",
+      "version": "21.2.1.dev154",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbc0bbc059b04aad",
+      "type": "library",
+      "name": "asn1crypto",
+      "version": "1.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2477330f34c396ae",
+      "type": "library",
+      "name": "attrs",
+      "version": "21.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1fdc139833804897",
+      "type": "library",
+      "name": "attrs",
+      "version": "25.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "433ec8fcb5b075e8",
+      "type": "library",
+      "name": "bcrypt",
+      "version": "3.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "32f56d8cac320a56",
+      "type": "library",
+      "name": "beautifulsoup4",
+      "version": "4.12.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1088804706a0e82a",
+      "type": "library",
+      "name": "blinker",
+      "version": "1.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cfc2b3815a4c4d97",
+      "type": "library",
+      "name": "blinker",
+      "version": "1.7.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c5a226145afbeb13",
+      "type": "library",
+      "name": "boringssl_binary_build",
+      "version": "0.0.6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "82692f4595925a2c",
+      "type": "library",
+      "name": "certifi",
+      "version": "2020.6.20",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/certifi@2021.10.8?package-id=0f182d5119d181ee",
+      "type": "library",
+      "name": "certifi",
+      "version": "2021.10.8",
+      "cpe": "cpe:2.3:a:certifi:certifi:2021.10.8:*:*:*:*:python:*:*",
+      "purl": "pkg:pypi/certifi@2021.10.8",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/frozen_requirements.txt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/cffi@1.15.0?package-id=c8287f09849b205d",
+      "type": "library",
+      "name": "cffi",
+      "version": "1.15.0",
+      "cpe": "cpe:2.3:a:python-cffi:python-cffi:1.15.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/cffi@1.15.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cffi:python_cffi:1.15.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cffi:python-cffi:1.15.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cffi:python_cffi:1.15.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-cffi:1.15.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_cffi:1.15.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cffi:python-cffi:1.15.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cffi:python_cffi:1.15.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cffi:cffi:1.15.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cffi:cffi:1.15.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:cffi:1.15.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cffi:cffi:1.15.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/frozen_requirements.txt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b7885b0e7adff651",
+      "type": "library",
+      "name": "cffi",
+      "version": "1.17.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "06b5fbaef1bdf1ee",
+      "type": "library",
+      "name": "chardet",
+      "version": "4.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "22ff0efc7aed97d1",
+      "type": "library",
+      "name": "charset_normalizer",
+      "version": "3.3.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b77f63740443f67f",
+      "type": "library",
+      "name": "chrome_gnome_shell",
+      "version": "0.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "01038f5fd0c8089f",
+      "type": "library",
+      "name": "click",
+      "version": "8.0.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5b5054d76cef697b",
+      "type": "library",
+      "name": "click",
+      "version": "8.1.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "594eef8f9bc1d27d",
+      "type": "library",
+      "name": "cmake",
+      "version": "3.30.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "26783820d8c6d365",
+      "type": "library",
+      "name": "colorama",
+      "version": "0.4.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0f862e4dfe626481",
+      "type": "library",
+      "name": "command_not_found",
+      "version": "0.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9b97e0d0baf21ee8",
+      "type": "library",
+      "name": "contourpy",
+      "version": "1.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2a856b9c5287ee4f",
+      "type": "library",
+      "name": "coverage",
+      "version": "7.3.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b88f52843b1575f1",
+      "type": "library",
+      "name": "cryptography",
+      "version": "3.4.8",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8c962889daa6bb7c",
+      "type": "library",
+      "name": "cryptography",
+      "version": "44.0.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d6d1a884b1b9fccd",
+      "type": "library",
+      "name": "cupshelpers-1.0",
+      "version": "py3.10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c8f0fadfbe3e05b2",
+      "type": "library",
+      "name": "cycler",
+      "version": "0.12.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "28e476e7f16ef579",
+      "type": "library",
+      "name": "cyclonedx_bom",
+      "version": "3.11.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "896343eab1633e5d",
+      "type": "library",
+      "name": "cyclonedx_python_lib",
+      "version": "3.1.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6488907e00028ffe",
+      "type": "library",
+      "name": "dbus_python",
+      "version": "1.2.18",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7f4f5a83a1c9d36d",
+      "type": "library",
+      "name": "defer",
+      "version": "1.0.6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c70dfb7b0ebe9b89",
+      "type": "library",
+      "name": "defusedxml",
+      "version": "0.7.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "85bd328f57fdb990",
+      "type": "library",
+      "name": "deprecation",
+      "version": "2.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bd0cfce4cf6b2ef9",
+      "type": "library",
+      "name": "devscripts",
+      "version": "2.22.1ubuntu1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a52a5553338070c7",
+      "type": "library",
+      "name": "distlib",
+      "version": "0.3.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3e332184db540b35",
+      "type": "library",
+      "name": "distro",
+      "version": "1.7.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "32cb5bc88b2ee2c7",
+      "type": "library",
+      "name": "distro_info",
+      "version": "1.1+ubuntu0.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4662843485208a2c",
+      "type": "library",
+      "name": "dlib",
+      "version": "19.24.99",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "eb360e3bcee38f57",
+      "type": "library",
+      "name": "docker",
+      "version": "5.0.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7b4d3ec4d6e97e61",
+      "type": "library",
+      "name": "docker_compose",
+      "version": "1.29.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a06fe9d7ed657b84",
+      "type": "library",
+      "name": "dockerpty",
+      "version": "0.4.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "212c9efd237f9f70",
+      "type": "library",
+      "name": "docopt",
+      "version": "0.6.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "87fe223fdfce29b7",
+      "type": "library",
+      "name": "duplicity",
+      "version": "0.8.21",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a9d30187147f4bca",
+      "type": "library",
+      "name": "et_xmlfile",
+      "version": "1.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d04997c4d387789b",
+      "type": "library",
+      "name": "exceptiongroup",
+      "version": "1.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5e23a86f475321d9",
+      "type": "library",
+      "name": "fasteners",
+      "version": "0.14.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f91d2b3903c0cdb1",
+      "type": "library",
+      "name": "filelock",
+      "version": "3.6.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "342d686b9fb1f859",
+      "type": "library",
+      "name": "flask",
+      "version": "3.0.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9c943e9b7c083eb4",
+      "type": "library",
+      "name": "fonttools",
+      "version": "4.44.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0811de082ff3e5be",
+      "type": "library",
+      "name": "future",
+      "version": "0.18.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "58bda1f5b7b5cbfb",
+      "type": "library",
+      "name": "gpg-1.16.0",
+      "version": "py3.10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "86d1fb08a70a1ed6",
+      "type": "library",
+      "name": "gyp",
+      "version": "0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/h11@0.12.0?package-id=8f3ac66cb99f73d7",
+      "type": "library",
+      "name": "h11",
+      "version": "0.12.0",
+      "cpe": "cpe:2.3:a:python-h11:python-h11:0.12.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/h11@0.12.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-h11:python_h11:0.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_h11:python-h11:0.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_h11:python_h11:0.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-h11:0.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_h11:0.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:h11:python-h11:0.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:h11:python_h11:0.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-h11:h11:0.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_h11:h11:0.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:h11:0.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:h11:h11:0.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/frozen_requirements.txt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d13c5b511a6434e2",
+      "type": "library",
+      "name": "h11",
+      "version": "0.14.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/h2@4.1.0?package-id=c776dfb126fd69a9",
+      "type": "library",
+      "name": "h2",
+      "version": "4.1.0",
+      "cpe": "cpe:2.3:a:python-h2:python-h2:4.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/h2@4.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-h2:python_h2:4.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_h2:python-h2:4.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_h2:python_h2:4.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-h2:4.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_h2:4.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:h2:python-h2:4.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:h2:python_h2:4.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-h2:h2:4.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_h2:h2:4.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:h2:4.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:h2:h2:4.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/frozen_requirements.txt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "07284a472deccf3e",
+      "type": "library",
+      "name": "h2",
+      "version": "4.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/hpack@4.0.0?package-id=b08c1d83c09e250b",
+      "type": "library",
+      "name": "hpack",
+      "version": "4.0.0",
+      "cpe": "cpe:2.3:a:python-hpack:python-hpack:4.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/hpack@4.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-hpack:python_hpack:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_hpack:python-hpack:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_hpack:python_hpack:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-hpack:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_hpack:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hpack:python-hpack:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hpack:python_hpack:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-hpack:hpack:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_hpack:hpack:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:hpack:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hpack:hpack:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/frozen_requirements.txt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "711a43b03bebded9",
+      "type": "library",
+      "name": "hpack",
+      "version": "4.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7e337dee92bebb42",
+      "type": "library",
+      "name": "html5lib",
+      "version": "1.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/httpcore@0.14.7?package-id=c0d56c55b3e67afd",
+      "type": "library",
+      "name": "httpcore",
+      "version": "0.14.7",
+      "cpe": "cpe:2.3:a:python-httpcore:python-httpcore:0.14.7:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/httpcore@0.14.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-httpcore:python_httpcore:0.14.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_httpcore:python-httpcore:0.14.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_httpcore:python_httpcore:0.14.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:httpcore:python-httpcore:0.14.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:httpcore:python_httpcore:0.14.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-httpcore:httpcore:0.14.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_httpcore:httpcore:0.14.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-httpcore:0.14.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_httpcore:0.14.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:httpcore:httpcore:0.14.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:httpcore:0.14.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/frozen_requirements.txt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "10aa1bbe632409a0",
+      "type": "library",
+      "name": "httpcore",
+      "version": "0.16.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e1e4d184926172c6",
+      "type": "library",
+      "name": "httplib2",
+      "version": "0.20.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/hyperframe@6.0.1?package-id=69ef4790cf5dc79a",
+      "type": "library",
+      "name": "hyperframe",
+      "version": "6.0.1",
+      "cpe": "cpe:2.3:a:python-hyperframe:python-hyperframe:6.0.1:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/hyperframe@6.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-hyperframe:python_hyperframe:6.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_hyperframe:python-hyperframe:6.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_hyperframe:python_hyperframe:6.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hyperframe:python-hyperframe:6.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hyperframe:python_hyperframe:6.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-hyperframe:hyperframe:6.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_hyperframe:hyperframe:6.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-hyperframe:6.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_hyperframe:6.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hyperframe:hyperframe:6.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:hyperframe:6.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/frozen_requirements.txt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "31f7b74f188c67d9",
+      "type": "library",
+      "name": "hyperframe",
+      "version": "6.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/idna@3.3?package-id=560a7e651fa6c65f",
+      "type": "library",
+      "name": "idna",
+      "version": "3.3",
+      "cpe": "cpe:2.3:a:python-idna:python-idna:3.3:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/idna@3.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-idna:python_idna:3.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_idna:python-idna:3.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_idna:python_idna:3.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-idna:3.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_idna:3.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:idna:python-idna:3.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:idna:python_idna:3.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-idna:idna:3.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_idna:idna:3.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:idna:3.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:idna:idna:3.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/frozen_requirements.txt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "472e5aa791ce4252",
+      "type": "library",
+      "name": "img2pdf",
+      "version": "0.4.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6313b39f35773909",
+      "type": "library",
+      "name": "importlib_metadata",
+      "version": "4.6.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1b86def2588a9b66",
+      "type": "library",
+      "name": "in_toto",
+      "version": "1.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1bb6a1192649bc4d",
+      "type": "library",
+      "name": "in_toto",
+      "version": "3.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d2d57dd05d7b099a",
+      "type": "library",
+      "name": "iso8601",
+      "version": "2.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d85e4a2663f4db08",
+      "type": "library",
+      "name": "itsdangerous",
+      "version": "2.1.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "414d405bbda5e9ee",
+      "type": "library",
+      "name": "jeepney",
+      "version": "0.7.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "47e7ce8dd5378a0f",
+      "type": "library",
+      "name": "joblib",
+      "version": "1.4.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2268398cb81b8ee9",
+      "type": "library",
+      "name": "jsonschema",
+      "version": "3.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "daf4bb8070609bcd",
+      "type": "library",
+      "name": "keyring",
+      "version": "23.5.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "61b6f645a8f41648",
+      "type": "library",
+      "name": "kiwisolver",
+      "version": "1.4.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "05ee4678212847cc",
+      "type": "library",
+      "name": "language_selector",
+      "version": "0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bf7245ef302831ce",
+      "type": "library",
+      "name": "launchpadlib",
+      "version": "1.10.16",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "641ef0ce732a0c4b",
+      "type": "library",
+      "name": "lazr.restfulclient",
+      "version": "0.14.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8568fa084ae98bc3",
+      "type": "library",
+      "name": "lazr.uri",
+      "version": "1.0.6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d93ee381ad6958b6",
+      "type": "library",
+      "name": "lib4sbom",
+      "version": "0.5.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8580cdc5a9c6f3ee",
+      "type": "library",
+      "name": "lockfile",
+      "version": "0.12.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ce2d7bdffbdba664",
+      "type": "library",
+      "name": "louis",
+      "version": "3.20.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "95c46b66dcfbb526",
+      "type": "library",
+      "name": "lxml",
+      "version": "4.9.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5b7cf2a688c34b4e",
+      "type": "library",
+      "name": "macaroonbakery",
+      "version": "1.3.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3a9428212858e6b1",
+      "type": "library",
+      "name": "macholib",
+      "version": "1.16.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "24afdbc748fc4f40",
+      "type": "library",
+      "name": "matplotlib",
+      "version": "3.8.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c2ea6f1ce5d7a317",
+      "type": "library",
+      "name": "mechanize",
+      "version": "0.4.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "07317131f16f47f6",
+      "type": "library",
+      "name": "modulegraph",
+      "version": "0.19.6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "73499af96fb17b4e",
+      "type": "library",
+      "name": "monotonic",
+      "version": "1.6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4a4c73b2eee9803c",
+      "type": "library",
+      "name": "more_itertools",
+      "version": "8.10.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "51e6b75b7739feb1",
+      "type": "library",
+      "name": "natsort",
+      "version": "8.0.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7f6cffed6e2b8af5",
+      "type": "library",
+      "name": "netifaces",
+      "version": "0.11.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ca77fd19fbed361e",
+      "type": "library",
+      "name": "networkx",
+      "version": "3.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0fe406a5d2f0423e",
+      "type": "library",
+      "name": "numpy",
+      "version": "1.21.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ecc488d2fc9deff7",
+      "type": "library",
+      "name": "numpy",
+      "version": "1.26.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0e06bd70c1b611e7",
+      "type": "library",
+      "name": "oauthlib",
+      "version": "3.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2a3b7e2fb6b34e42",
+      "type": "library",
+      "name": "olefile",
+      "version": "0.46",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7b646f8b8a41c06e",
+      "type": "library",
+      "name": "opencv_python",
+      "version": "4.9.0.80",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0a6ff1e2ae784894",
+      "type": "library",
+      "name": "openpyxl",
+      "version": "3.1.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9daf23b9e0b65391",
+      "type": "library",
+      "name": "packageurl_python",
+      "version": "0.11.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8eb6dfe88a7e2cc3",
+      "type": "library",
+      "name": "packaging",
+      "version": "23.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b0bb44be395c8ef1",
+      "type": "library",
+      "name": "pandas",
+      "version": "2.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d4b65631f0d0f810",
+      "type": "library",
+      "name": "paramiko",
+      "version": "2.9.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "957bae42f5018415",
+      "type": "library",
+      "name": "pathspec",
+      "version": "0.12.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4c81bae4809b0596",
+      "type": "library",
+      "name": "pathspec",
+      "version": "0.9.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "edc4503c22e7b413",
+      "type": "library",
+      "name": "patsy",
+      "version": "0.5.6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "894b384725a5762f",
+      "type": "library",
+      "name": "pbr",
+      "version": "5.8.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0ce255969abf0c51",
+      "type": "library",
+      "name": "pexpect",
+      "version": "4.8.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "898daff1183b03dd",
+      "type": "library",
+      "name": "pikepdf",
+      "version": "8.5.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ca281b0652c7bc68",
+      "type": "library",
+      "name": "pip",
+      "version": "25.1.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5b3361c8fc6daa71",
+      "type": "library",
+      "name": "pip_requirements_parser",
+      "version": "32.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b40ac5faa56bc215",
+      "type": "library",
+      "name": "platformdirs",
+      "version": "2.5.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8b65474eed275243",
+      "type": "library",
+      "name": "protobuf",
+      "version": "3.12.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "153940847d74fb08",
+      "type": "library",
+      "name": "ptyprocess",
+      "version": "0.7.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d1756fedbe2d24dd",
+      "type": "library",
+      "name": "py2app",
+      "version": "0.28.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3bb489f8a12588a5",
+      "type": "library",
+      "name": "pyRFC3339",
+      "version": "1.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "14e9f2361ad39d1f",
+      "type": "library",
+      "name": "pyarrow",
+      "version": "17.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8f8661bba745fb21",
+      "type": "library",
+      "name": "pycairo",
+      "version": "1.20.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/pycparser@2.21?package-id=74fda57281362b30",
+      "type": "library",
+      "name": "pycparser",
+      "version": "2.21",
+      "cpe": "cpe:2.3:a:python-pycparser:python-pycparser:2.21:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/pycparser@2.21",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-pycparser:python_pycparser:2.21:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_pycparser:python-pycparser:2.21:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_pycparser:python_pycparser:2.21:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:pycparser:python-pycparser:2.21:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:pycparser:python_pycparser:2.21:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-pycparser:pycparser:2.21:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_pycparser:pycparser:2.21:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-pycparser:2.21:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_pycparser:2.21:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:pycparser:pycparser:2.21:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:pycparser:2.21:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/frozen_requirements.txt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ec6f0dc76794a497",
+      "type": "library",
+      "name": "pycparser",
+      "version": "2.22",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a1630106c0dd0775",
+      "type": "library",
+      "name": "pycups",
+      "version": "2.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "35a49a2e081071c6",
+      "type": "library",
+      "name": "pymacaroons",
+      "version": "0.13.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b087c61db773b8c2",
+      "type": "library",
+      "name": "pyparsing",
+      "version": "2.4.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5e555eccd5d9bb82",
+      "type": "library",
+      "name": "pyqt5_plugins",
+      "version": "5.15.9.2.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1122dd2053e68ea7",
+      "type": "library",
+      "name": "pyqt5_tools",
+      "version": "5.15.9.3.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "434111204ab2e744",
+      "type": "library",
+      "name": "pyrsistent",
+      "version": "0.18.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "83180040e2bf5772",
+      "type": "library",
+      "name": "python_apt",
+      "version": "2.4.0+ubuntu3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9ffa61e6220c4ad9",
+      "type": "library",
+      "name": "python_dateutil",
+      "version": "2.8.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "99e918edb6210b0c",
+      "type": "library",
+      "name": "python_dateutil",
+      "version": "2.9.0.post0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5051c0c0bd0aab74",
+      "type": "library",
+      "name": "python_debian",
+      "version": "0.1.43+ubuntu1.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4c9123b85ae98261",
+      "type": "library",
+      "name": "python_dotenv",
+      "version": "0.19.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0e77de1613d35edc",
+      "type": "library",
+      "name": "python_magic",
+      "version": "0.4.24",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3c5085caa0f13313",
+      "type": "library",
+      "name": "python_magic",
+      "version": "0.4.27",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d1b9db6fba2b2936",
+      "type": "library",
+      "name": "pytz",
+      "version": "2022.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "eebcd36be1336358",
+      "type": "library",
+      "name": "pyxdg",
+      "version": "0.27",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3b1ceda8fb535fc4",
+      "type": "library",
+      "name": "qt5_applications",
+      "version": "5.15.2.2.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0a0b677674e667a9",
+      "type": "library",
+      "name": "qt5_tools",
+      "version": "5.15.2.1.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5d7b347d2dbb93a2",
+      "type": "library",
+      "name": "regex",
+      "version": "2023.12.25",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4ba17b0ac3b39f0b",
+      "type": "library",
+      "name": "reportlab",
+      "version": "3.6.8",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "025f62d9e77a072b",
+      "type": "library",
+      "name": "requests",
+      "version": "2.25.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b7af824f97a0db3c",
+      "type": "library",
+      "name": "requests",
+      "version": "2.31.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6d8309e47f5d2e10",
+      "type": "library",
+      "name": "sbom2dot",
+      "version": "0.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0ae424bf6355d30c",
+      "type": "library",
+      "name": "sbom4files",
+      "version": "0.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1e6f95b4f7369086",
+      "type": "library",
+      "name": "sbom4python",
+      "version": "0.10.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f144ded0a9976a59",
+      "type": "library",
+      "name": "scikit_learn",
+      "version": "1.5.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "eb67165f4be76347",
+      "type": "library",
+      "name": "scipy",
+      "version": "1.12.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d321b3eab1093981",
+      "type": "library",
+      "name": "screen_resolution_extra",
+      "version": "0.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ec4cc22790a1f321",
+      "type": "library",
+      "name": "seaborn",
+      "version": "0.13.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dc383aa6d97614a7",
+      "type": "library",
+      "name": "securesystemslib",
+      "version": "0.20.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5cdf8be86c072531",
+      "type": "library",
+      "name": "securesystemslib",
+      "version": "1.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "54f1cfc820a529c0",
+      "type": "library",
+      "name": "semantic_version",
+      "version": "2.10.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "74ef537645daea7d",
+      "type": "library",
+      "name": "setuptools",
+      "version": "59.6.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8c8ea4c6a51d967f",
+      "type": "library",
+      "name": "setuptools",
+      "version": "80.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1fcc3d9997f6a128",
+      "type": "library",
+      "name": "six",
+      "version": "1.16.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "071993bdea28b764",
+      "type": "library",
+      "name": "six",
+      "version": "1.17.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e8c94e0e69941448",
+      "type": "library",
+      "name": "slipcover",
+      "version": "0.3.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/sniffio@1.2.0?package-id=ff21e5eeb57fd25e",
+      "type": "library",
+      "name": "sniffio",
+      "version": "1.2.0",
+      "cpe": "cpe:2.3:a:python-sniffio:python-sniffio:1.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/sniffio@1.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-sniffio:python_sniffio:1.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_sniffio:python-sniffio:1.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_sniffio:python_sniffio:1.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-sniffio:sniffio:1.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_sniffio:sniffio:1.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:sniffio:python-sniffio:1.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:sniffio:python_sniffio:1.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-sniffio:1.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_sniffio:1.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:sniffio:sniffio:1.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:sniffio:1.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/frozen_requirements.txt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3e8e491ba5da67eb",
+      "type": "library",
+      "name": "sniffio",
+      "version": "1.3.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f1b5e48cdd4dc81d",
+      "type": "library",
+      "name": "sortedcontainers",
+      "version": "2.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "db1e5adf90c8573e",
+      "type": "library",
+      "name": "soupsieve",
+      "version": "2.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "669b040eba17ff16",
+      "type": "library",
+      "name": "squarify",
+      "version": "0.4.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbe94b8d0aaac044",
+      "type": "library",
+      "name": "statsmodels",
+      "version": "0.14.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "430c887b6bda0162",
+      "type": "library",
+      "name": "stevedore",
+      "version": "3.5.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8623ef2d6e3a60af",
+      "type": "library",
+      "name": "systemd_python",
+      "version": "234",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4593a7b878a7e080",
+      "type": "library",
+      "name": "tabulate",
+      "version": "0.9.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fa72dd20c2782cbf",
+      "type": "library",
+      "name": "texttable",
+      "version": "1.6.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f851667b69a06309",
+      "type": "library",
+      "name": "threadpoolctl",
+      "version": "3.5.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8b7f4d5d74acbc77",
+      "type": "library",
+      "name": "tiktoken",
+      "version": "0.6.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9eb048e5e75913b9",
+      "type": "library",
+      "name": "toml",
+      "version": "0.10.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b9724fae437c616e",
+      "type": "library",
+      "name": "typing_extensions",
+      "version": "4.14.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "46623461cbd608bb",
+      "type": "library",
+      "name": "tzdata",
+      "version": "2024.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "58e4c193bc4e8a3a",
+      "type": "library",
+      "name": "ubuntu_advantage_tools",
+      "version": "8001",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "50055841d522c0ea",
+      "type": "library",
+      "name": "ubuntu_drivers_common",
+      "version": "0.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "73a8f7832a3f6c60",
+      "type": "library",
+      "name": "ufw",
+      "version": "0.36.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "36c82bddc7461207",
+      "type": "library",
+      "name": "unattended_upgrades",
+      "version": "0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2daff04708689ad6",
+      "type": "library",
+      "name": "uncalled",
+      "version": "0.1.6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "19d025d576987035",
+      "type": "library",
+      "name": "unidiff",
+      "version": "0.5.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "40cbf093c08b97d1",
+      "type": "library",
+      "name": "urllib3",
+      "version": "1.26.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ada31d378494afe2",
+      "type": "library",
+      "name": "usb_creator",
+      "version": "0.3.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "34522eeb2bea6a40",
+      "type": "library",
+      "name": "virtualenv",
+      "version": "20.13.0+ds",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cd75917eeaf272ab",
+      "type": "library",
+      "name": "virtualenv_clone",
+      "version": "0.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d7dc458251cc7b33",
+      "type": "library",
+      "name": "virtualenvwrapper",
+      "version": "4.8.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "611a882bca6c4c4e",
+      "type": "library",
+      "name": "vulture",
+      "version": "2.10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e68f18ec90512dac",
+      "type": "library",
+      "name": "wadllib",
+      "version": "1.3.6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8958bd29fba50d71",
+      "type": "library",
+      "name": "webencodings",
+      "version": "0.5.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "447f4eadf18290f6",
+      "type": "library",
+      "name": "websocket_client",
+      "version": "1.2.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9667dfdec6de742f",
+      "type": "library",
+      "name": "werkzeug",
+      "version": "3.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4625000e8c91746b",
+      "type": "library",
+      "name": "wheel",
+      "version": "0.37.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a7c82e86f29f0b5d",
+      "type": "library",
+      "name": "wxPython",
+      "version": "4.0.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2bbf34d758a9e758",
+      "type": "library",
+      "name": "xdg",
+      "version": "5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "330aca6c10e6fe6f",
+      "type": "library",
+      "name": "xkit",
+      "version": "0.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "102c7ae367d5948e",
+      "type": "library",
+      "name": "zipp",
+      "version": "1.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "attestation"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3c1d74d6f3df2b77",
+      "type": "file",
+      "name": "/etc/debian_version"
+    },
+    {
+      "bom-ref": "6bcaaaa2995a35c9",
+      "type": "file",
+      "name": "/etc/gai.conf"
+    },
+    {
+      "bom-ref": "79d37d8f33be4a95",
+      "type": "file",
+      "name": "/etc/host.conf"
+    },
+    {
+      "bom-ref": "349160c96285ff74",
+      "type": "file",
+      "name": "/etc/hosts"
+    },
+    {
+      "bom-ref": "6995012ebf41be44",
+      "type": "file",
+      "name": "/etc/ld.so.cache"
+    },
+    {
+      "bom-ref": "683a8c11f2e49418",
+      "type": "file",
+      "name": "/etc/ld.so.preload"
+    },
+    {
+      "bom-ref": "197bc54e5e3b64f7",
+      "type": "file",
+      "name": "/etc/localtime"
+    },
+    {
+      "bom-ref": "ada9d312abe42130",
+      "type": "file",
+      "name": "/etc/lsp.exclude"
+    },
+    {
+      "bom-ref": "150e7e1f829177a6",
+      "type": "file",
+      "name": "/etc/nsswitch.conf"
+    },
+    {
+      "bom-ref": "49ea8b12d47d3750",
+      "type": "file",
+      "name": "/etc/os-release"
+    },
+    {
+      "bom-ref": "b1d5bbd030aa64b9",
+      "type": "file",
+      "name": "/etc/resolv.conf"
+    },
+    {
+      "bom-ref": "e9e7f978ab3a4b8a",
+      "type": "file",
+      "name": "/etc/rustup/settings.toml"
+    },
+    {
+      "bom-ref": "0f3d0395cda6c27b",
+      "type": "file",
+      "name": "/etc/ssl/certs/ca-certificates.crt"
+    },
+    {
+      "bom-ref": "f5e156f1c5b5748c",
+      "type": "file",
+      "name": "/Users/areddypa/Desktop/Research/boringssl-python-cffi/frozen_requirements.txt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0ce43339caadb214caa07bc9b2b101b80ab5b0fc"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "60ad4141083c073677acfb50b08dfb39cfc994fb184c18ef97f22445cbe00e9e"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a0321815f35f97c4",
+      "type": "file",
+      "name": "/home/dennis/.cache/pip/selfcheck/241e69162522ccf5846a2f42ebc24b17464915a155679666b89a9f31"
+    },
+    {
+      "bom-ref": "e7ca873040d01259",
+      "type": "file",
+      "name": "/home/dennis/.local/bin/pip"
+    },
+    {
+      "bom-ref": "f20259e55664c257",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/_cffi_backend.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "5b1a0748acb8b6c6",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl.cpython-36m-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "2ae229182e312580",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl_binary_build.libs/glibc-hwcaps/x86-64-v2/libcrypto-148f10ab.so"
+    },
+    {
+      "bom-ref": "11524c51debb6cfa",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl_binary_build.libs/glibc-hwcaps/x86-64-v3/libcrypto-148f10ab.so"
+    },
+    {
+      "bom-ref": "fde52ce53a1834b2",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl_binary_build.libs/haswell/libcrypto-148f10ab.so"
+    },
+    {
+      "bom-ref": "799c8dbc02a1114a",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl_binary_build.libs/haswell/x86_64/libcrypto-148f10ab.so"
+    },
+    {
+      "bom-ref": "c4c482a202aa5827",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl_binary_build.libs/libcrypto-148f10ab.so"
+    },
+    {
+      "bom-ref": "4b8a7af0fc30db82",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl_binary_build.libs/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "3466c87b9ad66297",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl_binary_build.libs/libstdc++.so.6"
+    },
+    {
+      "bom-ref": "5e1e1ccf636752c8",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl_binary_build.libs/tls/haswell/libcrypto-148f10ab.so"
+    },
+    {
+      "bom-ref": "f0cd75b0a0e334e6",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl_binary_build.libs/tls/haswell/x86_64/libcrypto-148f10ab.so"
+    },
+    {
+      "bom-ref": "5d66b6288b672f28",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl_binary_build.libs/tls/libcrypto-148f10ab.so"
+    },
+    {
+      "bom-ref": "241e0a0948261844",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl_binary_build.libs/tls/x86_64/libcrypto-148f10ab.so"
+    },
+    {
+      "bom-ref": "ab103011f0668154",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/boringssl_binary_build/../boringssl_binary_build.libs/x86_64/libcrypto-148f10ab.so"
+    },
+    {
+      "bom-ref": "1da89162d17ace42",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/distutils-precedence.pth"
+    },
+    {
+      "bom-ref": "471720cd9f599a46",
+      "type": "file",
+      "name": "/home/dennis/.local/lib/python3.10/site-packages/pip/_vendor/certifi/cacert.pem"
+    },
+    {
+      "bom-ref": "33081c1d8944060b",
+      "type": "file",
+      "name": "/home/dennis/.rustup/settings.toml"
+    },
+    {
+      "bom-ref": "1433107d1fdb095f",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/glibc-hwcaps/x86-64-v2/libdl.so.2"
+    },
+    {
+      "bom-ref": "7f1e3cb6d8110f86",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/glibc-hwcaps/x86-64-v3/libdl.so.2"
+    },
+    {
+      "bom-ref": "f8a569dd1abbe23b",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/haswell/libdl.so.2"
+    },
+    {
+      "bom-ref": "fce7c16ab27577a1",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/haswell/x86_64/libdl.so.2"
+    },
+    {
+      "bom-ref": "3ac61559cb9c4f26",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/libc.so.6"
+    },
+    {
+      "bom-ref": "ff3d0cff4429b335",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/libdl.so.2"
+    },
+    {
+      "bom-ref": "6cc1d0625d094b36",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/libpthread.so.0"
+    },
+    {
+      "bom-ref": "a2a6913d8ea0a0a4",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librt.so.1"
+    },
+    {
+      "bom-ref": "ed9c79d5ba6f6ded",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/tls/haswell/libdl.so.2"
+    },
+    {
+      "bom-ref": "271afada5c9c3876",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/tls/haswell/x86_64/libdl.so.2"
+    },
+    {
+      "bom-ref": "aa97d04574b093f1",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/tls/libdl.so.2"
+    },
+    {
+      "bom-ref": "307a8efcfcbe2d96",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/tls/x86_64/libdl.so.2"
+    },
+    {
+      "bom-ref": "e298005d9b8d57b1",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/x86_64/libdl.so.2"
+    },
+    {
+      "bom-ref": "fd2920a76e6cabc5",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/../lib/glibc-hwcaps/x86-64-v2/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "72835271863b4eb1",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/../lib/glibc-hwcaps/x86-64-v3/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "cf0601067f32cf48",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/../lib/haswell/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "597bb0eee5b8a2c6",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/../lib/haswell/x86_64/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "1d680abc050c727b",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/../lib/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "32944ec4c99790bc",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/../lib/libm.so.6"
+    },
+    {
+      "bom-ref": "677ede28a4dfe91b",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/../lib/libz.so.1"
+    },
+    {
+      "bom-ref": "a39fc3bd0efe1dc4",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/../lib/tls/haswell/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "4acf6b4ab5d1bc92",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/../lib/tls/haswell/x86_64/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "cbf775f0a2d2f3d7",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/../lib/tls/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "2f0a616e293e7704",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/../lib/tls/x86_64/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "7012c8eca93753be",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/../lib/x86_64/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "c2cd8fe9ae846293",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/glibc-hwcaps/x86-64-v2/librustc_driver-812f6b983363b48e.so"
+    },
+    {
+      "bom-ref": "1f69ba2675919f11",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/glibc-hwcaps/x86-64-v3/librustc_driver-812f6b983363b48e.so"
+    },
+    {
+      "bom-ref": "1047a64b252eaab2",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/librustc_driver-812f6b983363b48e.so"
+    },
+    {
+      "bom-ref": "13cd2f47ec963531",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/x86_64/librustc_driver-812f6b983363b48e.so"
+    },
+    {
+      "bom-ref": "23b692d05e2e8097",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libLLVM.so.20.1-rust-1.88.0-nightly"
+    },
+    {
+      "bom-ref": "1aec75decdb76ccf",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libc.so.6"
+    },
+    {
+      "bom-ref": "0ceb781fdebbe7db",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libdl.so.2"
+    },
+    {
+      "bom-ref": "cd5d9141141f459f",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "1b6b2c78f2444734",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libm.so.6"
+    },
+    {
+      "bom-ref": "c3515b4e9d341d7a",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libpthread.so.0"
+    },
+    {
+      "bom-ref": "02b4d6710d06ba85",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/librt.so.1"
+    },
+    {
+      "bom-ref": "81804260ed816c55",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/librustc_driver-812f6b983363b48e.so"
+    },
+    {
+      "bom-ref": "30c5c8bdb1a8c298",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libz.so.1"
+    },
+    {
+      "bom-ref": "2948f2aa4475663e",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/librustc_driver-812f6b983363b48e.so"
+    },
+    {
+      "bom-ref": "1280e5fc47087e73",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/x86_64/librustc_driver-812f6b983363b48e.so"
+    },
+    {
+      "bom-ref": "e4e516d9a4d318d6",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/librustc_driver-812f6b983363b48e.so"
+    },
+    {
+      "bom-ref": "7a848c3cc2d5bb54",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/x86_64/librustc_driver-812f6b983363b48e.so"
+    },
+    {
+      "bom-ref": "1f333ed045797c3a",
+      "type": "file",
+      "name": "/home/dennis/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/x86_64/librustc_driver-812f6b983363b48e.so"
+    },
+    {
+      "bom-ref": "a0d4d924b4665b7c",
+      "type": "file",
+      "name": "/home/dennis/Documents/SBOMit/boringssl-python-cffi/core_h2.py"
+    },
+    {
+      "bom-ref": "322049be4f6a8ae2",
+      "type": "file",
+      "name": "/home/dennis/Documents/SBOMit/boringssl-python-cffi/rust-toolchain"
+    },
+    {
+      "bom-ref": "9eca0e865737c6c1",
+      "type": "file",
+      "name": "/home/dennis/Documents/SBOMit/boringssl-python-cffi/rust-toolchain.toml"
+    },
+    {
+      "bom-ref": "1f05e5266f212d59",
+      "type": "file",
+      "name": "/home/dennis/Documents/SBOMit/rust-toolchain"
+    },
+    {
+      "bom-ref": "689debd6224486ee",
+      "type": "file",
+      "name": "/home/dennis/Documents/SBOMit/rust-toolchain.toml"
+    },
+    {
+      "bom-ref": "874cb85f41f2a72c",
+      "type": "file",
+      "name": "/home/dennis/Documents/rust-toolchain"
+    },
+    {
+      "bom-ref": "c4d5d969d31d13d0",
+      "type": "file",
+      "name": "/home/dennis/Documents/rust-toolchain.toml"
+    },
+    {
+      "bom-ref": "cc7371399a7e7e07",
+      "type": "file",
+      "name": "/home/dennis/rust-toolchain"
+    },
+    {
+      "bom-ref": "e103dc5d09507354",
+      "type": "file",
+      "name": "/home/dennis/rust-toolchain.toml"
+    },
+    {
+      "bom-ref": "143e81175efac580",
+      "type": "file",
+      "name": "/home/rust-toolchain"
+    },
+    {
+      "bom-ref": "9dd7deddeab3bef2",
+      "type": "file",
+      "name": "/home/rust-toolchain.toml"
+    },
+    {
+      "bom-ref": "2deace993ab2fdda",
+      "type": "file",
+      "name": "/lib/lib/x86_64-linux-gnu/liblsp.so"
+    },
+    {
+      "bom-ref": "5578ba14c82ab7f5",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libbz2.so.1.0"
+    },
+    {
+      "bom-ref": "0cda3d04a8892260",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libc.so.6"
+    },
+    {
+      "bom-ref": "0e16e62d08a3380e",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libcrypto.so.3"
+    },
+    {
+      "bom-ref": "3554f0b1f9072adf",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libdl.so.2"
+    },
+    {
+      "bom-ref": "61d5b10c81083fbb",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libexpat.so.1"
+    },
+    {
+      "bom-ref": "b971df304573d33b",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libgcc_s.so.1"
+    },
+    {
+      "bom-ref": "dee22833671e03e9",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/liblzma.so.5"
+    },
+    {
+      "bom-ref": "5ee5b360105aace6",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libm.so.6"
+    },
+    {
+      "bom-ref": "de5439e67a56ac7d",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libmpdec.so.3"
+    },
+    {
+      "bom-ref": "5b5be507767f0a73",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2"
+    },
+    {
+      "bom-ref": "e58a2b344f894a29",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libpthread.so.0"
+    },
+    {
+      "bom-ref": "8c31d9c24e892682",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/librt.so.1"
+    },
+    {
+      "bom-ref": "e0fb5bdd635479a7",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libssl.so.3"
+    },
+    {
+      "bom-ref": "cb044b1d993b544a",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libstdc++.so.6"
+    },
+    {
+      "bom-ref": "8cd4eef95edcc8e1",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libtinfo.so.6"
+    },
+    {
+      "bom-ref": "dfd3f07e6b99fa85",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libuuid.so.1"
+    },
+    {
+      "bom-ref": "45448a4a620c890f",
+      "type": "file",
+      "name": "/lib/x86_64-linux-gnu/libz.so.1"
+    },
+    {
+      "bom-ref": "17da3f7561066c17",
+      "type": "file",
+      "name": "/proc/self/cgroup"
+    },
+    {
+      "bom-ref": "d68889f314d9becc",
+      "type": "file",
+      "name": "/proc/self/maps"
+    },
+    {
+      "bom-ref": "68e11f4e4f75611b",
+      "type": "file",
+      "name": "/proc/self/statm"
+    },
+    {
+      "bom-ref": "bf01fbaa11877b54",
+      "type": "file",
+      "name": "/rust-toolchain"
+    },
+    {
+      "bom-ref": "f0f66edd99b800ab",
+      "type": "file",
+      "name": "/rust-toolchain.toml"
+    },
+    {
+      "bom-ref": "e057e24ae2d4b0b0",
+      "type": "file",
+      "name": "/sys/fs/cgroup/cpu.max"
+    },
+    {
+      "bom-ref": "818ee2e86421c071",
+      "type": "file",
+      "name": "/sys/fs/cgroup/user.slice/cpu.max"
+    },
+    {
+      "bom-ref": "2db717e7a8dd31f4",
+      "type": "file",
+      "name": "/sys/fs/cgroup/user.slice/user-1000.slice/cpu.max"
+    },
+    {
+      "bom-ref": "54b01e6614deda75",
+      "type": "file",
+      "name": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/cpu.max"
+    },
+    {
+      "bom-ref": "475e3a7e6554ce03",
+      "type": "file",
+      "name": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-855fa789-e93e-42fd-9a53-2f89b05de9b3.scope/cpu.max"
+    },
+    {
+      "bom-ref": "9001a71074ced670",
+      "type": "file",
+      "name": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/cpu.max"
+    },
+    {
+      "bom-ref": "83a75c73fd8add33",
+      "type": "file",
+      "name": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/cpu.max"
+    },
+    {
+      "bom-ref": "2d892a83b31b71f0",
+      "type": "file",
+      "name": "/tmp/o0sx9ib0"
+    },
+    {
+      "bom-ref": "5c64ee48e55fed6e",
+      "type": "file",
+      "name": "/tmp/tcc1u8mo"
+    },
+    {
+      "bom-ref": "7e79869cbb520ef8",
+      "type": "file",
+      "name": "/usr/bin/lsb_release"
+    },
+    {
+      "bom-ref": "ba228cc874256a99",
+      "type": "file",
+      "name": "/usr/bin/pybuilddir.txt"
+    },
+    {
+      "bom-ref": "0fc3e08fa760e9ee",
+      "type": "file",
+      "name": "/usr/bin/python3"
+    },
+    {
+      "bom-ref": "e673fa4c6f8dd6a5",
+      "type": "file",
+      "name": "/usr/bin/pyvenv.cfg"
+    },
+    {
+      "bom-ref": "8b4be29a55bd2d6b",
+      "type": "file",
+      "name": "/usr/lib/os-release"
+    },
+    {
+      "bom-ref": "7aca31eb331fe159",
+      "type": "file",
+      "name": "/usr/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "07387bb7b36a0dc0",
+      "type": "file",
+      "name": "/usr/lib/python3.10/lib-dynload/_contextvars.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "2ef78229ae2bc5a4",
+      "type": "file",
+      "name": "/usr/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "725acc25c630f729",
+      "type": "file",
+      "name": "/usr/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "79b1a4393bbc0110",
+      "type": "file",
+      "name": "/usr/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "faa83e5d005434c5",
+      "type": "file",
+      "name": "/usr/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "3d2b3c58c2222c7b",
+      "type": "file",
+      "name": "/usr/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "de11ae77f1814a23",
+      "type": "file",
+      "name": "/usr/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "181af1450a2bbf0d",
+      "type": "file",
+      "name": "/usr/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "6cae3e5ebce61c6b",
+      "type": "file",
+      "name": "/usr/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "ddc0619a8dc8947e",
+      "type": "file",
+      "name": "/usr/lib/python3.10/lib-dynload/mmap.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "26e19d952f064afd",
+      "type": "file",
+      "name": "/usr/lib/python3.10/lib-dynload/termios.cpython-310-x86_64-linux-gnu.so"
+    },
+    {
+      "bom-ref": "964dfd64698be73e",
+      "type": "file",
+      "name": "/usr/lib/python3/dist-packages/virtualenvwrapper-4.8.4-nspkg.pth"
+    },
+    {
+      "bom-ref": "72e0fe69a09d4dda",
+      "type": "file",
+      "name": "/usr/lib/ssl/cert.pem"
+    },
+    {
+      "bom-ref": "725b6d26ff2ef152",
+      "type": "file",
+      "name": "/usr/lib/ssl/openssl.cnf"
+    },
+    {
+      "bom-ref": "b932c7d931390926",
+      "type": "file",
+      "name": "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache"
+    },
+    {
+      "bom-ref": "32e8a5944411e2a8",
+      "type": "file",
+      "name": "/usr/local/lib/python3.10/dist-packages/booleanOperations-0.9.0-py3.10.egg/EGG-INFO/requires.txt"
+    },
+    {
+      "bom-ref": "e1db8ebca82daba3",
+      "type": "file",
+      "name": "/usr/local/lib/python3.10/dist-packages/drawBot-3.130-py3.10.egg/EGG-INFO/requires.txt"
+    },
+    {
+      "bom-ref": "e3d87b405f900b34",
+      "type": "file",
+      "name": "/usr/local/lib/python3.10/dist-packages/easy-install.pth"
+    },
+    {
+      "bom-ref": "3312e307d4fb0c33",
+      "type": "file",
+      "name": "/usr/local/lib/python3.10/dist-packages/pyobjc-10.1-py3.10.egg/EGG-INFO/requires.txt"
+    },
+    {
+      "bom-ref": "5ce577a72bdc422b",
+      "type": "file",
+      "name": "/usr/local/ssl/openssl.cnf"
+    },
+    {
+      "bom-ref": "684936f0710083ee",
+      "type": "file",
+      "name": "/usr/pyvenv.cfg"
+    },
+    {
+      "bom-ref": "c86dffbb62ac52cf",
+      "type": "file",
+      "name": "/usr/share/distro-info/debian.csv"
+    },
+    {
+      "bom-ref": "de56c4fe976039fe",
+      "type": "file",
+      "name": "/var/lib/dpkg/arch"
+    },
+    {
+      "bom-ref": "3e140e9b56072de1",
+      "type": "file",
+      "name": "/var/lib/dpkg/status"
+    },
+    {
+      "bom-ref": "96be5bcc747e4e92",
+      "type": "file",
+      "name": "/var/lib/dpkg/triggers/File"
+    },
+    {
+      "bom-ref": "5e2c545837c62193",
+      "type": "file",
+      "name": "/var/lib/dpkg/triggers/Unincorp"
+    },
+    {
+      "bom-ref": "2a70be4537426782",
+      "type": "file",
+      "name": "nightly-x86_64-unknown-linux-gnu"
+    },
+    {
+      "bom-ref": "b6b48946a1499046",
+      "type": "file",
+      "name": "requirements.txt"
+    }
+  ]
+}

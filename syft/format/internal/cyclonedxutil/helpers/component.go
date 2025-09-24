@@ -42,6 +42,8 @@ func EncodeComponent(p pkg.Package, supplier string, locationSorter func(a, b fi
 	componentType := cyclonedx.ComponentTypeLibrary
 	if p.Type == pkg.BinaryPkg {
 		componentType = cyclonedx.ComponentTypeApplication
+	} else if string(p.Type) == "file" {
+		componentType = cyclonedx.ComponentTypeFile
 	}
 
 	return cyclonedx.Component{
