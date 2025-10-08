@@ -30,7 +30,8 @@ import (
 )
 
 type Catalog struct {
-	AttestationPath string `yaml:"attestation-path" json:"attestation-path" mapstructure:"attestation-path"`
+	AttestationPath  string   `yaml:"attestation-path" json:"attestation-path" mapstructure:"attestation-path"`
+	AttestationTypes []string `yaml:"attestation-types" json:"attestation-types" mapstructure:"attestation-types"`
 	// high-level cataloger configuration
 	Catalogers        []string            `yaml:"-" json:"catalogers" mapstructure:"catalogers"` // deprecated and not shown in yaml output
 	DefaultCatalogers []string            `yaml:"default-catalogers" json:"default-catalogers" mapstructure:"default-catalogers"`
@@ -214,6 +215,7 @@ func (cfg Catalog) ToPackagesConfig() pkgcataloging.Config {
 
 func (cfg *Catalog) AddFlags(flags clio.FlagSet) {
 	flags.StringVarP(&cfg.AttestationPath, "attestation", "", "Path to attestation file or directory (optional)")
+	flags.StringArrayVarP(&cfg.AttestationTypes, "attestation-type", "", "process only attestations of these types (repeatable)")
 	var validScopeValues []string
 	for _, scope := range source.AllScopes {
 		validScopeValues = append(validScopeValues, strcase.ToDelimited(string(scope), '-'))

@@ -27,7 +27,6 @@ import (
 	"github.com/anchore/syft/internal/task"
 	"github.com/anchore/syft/syft"
 	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
 	"github.com/anchore/syft/syft/sbom"
 	"github.com/anchore/syft/syft/source"
 	"github.com/anchore/syft/syft/source/sourceproviders"
@@ -209,32 +208,126 @@ func runScan(ctx context.Context, id clio.Identification, opts *scanOptions, use
 	if s == nil {
 		return fmt.Errorf("no SBOM produced for %q", userInput)
 	}
+	// If an attestation path is provided, parse witness-style attestations and merge as requested
 	if opts.Catalog.AttestationPath != "" {
-		attFile := opts.Catalog.AttestationPath
-		var parser attestation.AttestationParser
-		if strings.HasSuffix(attFile, ".rs.att") {
-			parser = attestation.GetParser("rust")
-		} else if strings.HasSuffix(attFile, ".py.att") {
-			parser = attestation.GetParser("python")
-		}
-		if parser != nil {
-			pkgs, files, err := parser.ParseAttestation(attFile)
-			if err == nil {
-				for _, p := range pkgs {
-					if !packageExists(s.Artifacts.Packages, p) {
-						s.Artifacts.Packages.Add(p)
-					}
-				}
-				if s.Artifacts.FileMetadata == nil {
-					s.Artifacts.FileMetadata = make(map[file.Coordinates]file.Metadata)
-				}
-				for _, f := range files {
-					coord := file.NewCoordinates(string(f.Path), "")
-					if _, exists := s.Artifacts.FileMetadata[coord]; !exists {
-						s.Artifacts.FileMetadata[coord] = f
-					}
+		typed, err := attestation.ParseWitnessFile(opts.Catalog.AttestationPath)
+		if err != nil {
+			log.Warnf("unable to parse witness file: %v", err)
+		} else {
+			// filter types if user supplied explicit list
+			selected := map[string]struct{}{}
+			if len(opts.Catalog.AttestationTypes) > 0 {
+				for _, t := range opts.Catalog.AttestationTypes {
+					selected[t] = struct{}{}
 				}
 			}
+
+			// collect file paths to resolve (only hand off to python resolver for now)
+			var candidatePaths []string
+			for _, ta := range typed {
+				// Only allow short names for attestation-type selection
+				if len(selected) > 0 {
+					if _, ok := selected[ta.Type]; !ok {
+						continue
+					}
+				}
+
+				switch ta.Type {
+				case "material":
+					if m, ok := ta.Data["materials"].(map[string]interface{}); ok {
+						for p := range m {
+							candidatePaths = append(candidatePaths, p)
+						}
+					}
+				case "command-run":
+					if of, ok := ta.Data["openedfiles"].(map[string]interface{}); ok {
+						for p := range of {
+							candidatePaths = append(candidatePaths, p)
+						}
+					}
+				case "environment":
+					// nothing to resolve as files for now
+				case "git":
+					// provenance info only
+				case "network":
+					// network URLs only
+				case "product":
+					// todo: product parser
+				default:
+					// unknown types -> ignore
+				}
+			}
+
+			// resolve candidate paths to python packages and leftover files
+			pkgsFromAtt, filesFromAtt := attestation.ResolvePathsToPythonPackages(candidatePaths)
+
+			// merge packages
+			var pkgNoChange, pkgConflict, pkgAdded int
+
+			for _, p := range pkgsFromAtt {
+				// find existing packages with same name
+				existing := s.Artifacts.Packages.PackagesByName(p.Name)
+				matchedSameVersion := false
+				conflictFound := false
+				for _, ex := range existing {
+					if ex.Type == p.Type {
+						if ex.Version == p.Version {
+							matchedSameVersion = true
+							break
+						} else {
+							// name and type match, but version does not: conflict
+							conflictFound = true
+							s.Artifacts.Packages.Delete(ex.ID())
+						}
+					}
+				}
+
+				if matchedSameVersion {
+					pkgNoChange++
+					continue
+				}
+
+				if conflictFound {
+					pkgConflict++
+					// prefer attestation package
+					s.Artifacts.Packages.Add(p)
+					continue
+				}
+
+				// no existing package with same name -> add
+				s.Artifacts.Packages.Add(p)
+				pkgAdded++
+			}
+
+			// ensure file metadata map exists
+			if s.Artifacts.FileMetadata == nil {
+				s.Artifacts.FileMetadata = make(map[file.Coordinates]file.Metadata)
+			}
+
+			// merge files: if path exists in SBOM as a package-owned file, consider enrichment/conflict
+			var fileAdded, fileEnrich, fileConflict int
+			for _, f := range filesFromAtt {
+				coord := file.NewCoordinates(string(f.Path), "")
+				if existing, ok := s.Artifacts.FileMetadata[coord]; ok {
+					// simple enrichment detection: if hashes differ or other metadata differs, treat as enrichment/conflict
+					// For now, if the existing entry equals path, treat as enrichment (update metadata); otherwise treat as conflict and prefer attestation
+					if existing.Path == f.Path {
+						fileEnrich++
+						s.Artifacts.FileMetadata[coord] = f
+					} else {
+						fileConflict++
+						s.Artifacts.FileMetadata[coord] = f
+					}
+				} else {
+					s.Artifacts.FileMetadata[coord] = f
+					fileAdded++
+				}
+			}
+
+			// output a short report to stdout
+			fmt.Fprintf(os.Stdout, "Attestation merge summary:\n")
+			fmt.Fprintf(os.Stdout, "  packages - added: %d, unchanged: %d, conflicts: %d\n", pkgAdded, pkgNoChange, pkgConflict)
+			fmt.Fprintf(os.Stdout, "  files - added: %d, enriched: %d, conflicts: %d\n", fileAdded, fileEnrich, fileConflict)
 		}
 	}
 
@@ -243,16 +336,6 @@ func runScan(ctx context.Context, id clio.Identification, opts *scanOptions, use
 	}
 
 	return nil
-}
-
-// packageExists checks if a package with the same name and version exists in the SBOM package collection.
-func packageExists(col *pkg.Collection, candidate pkg.Package) bool {
-	for _, p := range col.Sorted() {
-		if p.Name == candidate.Name && p.Version == candidate.Version && p.Type == candidate.Type {
-			return true
-		}
-	}
-	return false
 }
 
 func getSource(ctx context.Context, opts *options.Catalog, userInput string, sources ...string) (source.Source, error) {
