@@ -32,6 +32,10 @@ import (
 type Catalog struct {
 	AttestationPath  string   `yaml:"attestation-path" json:"attestation-path" mapstructure:"attestation-path"`
 	AttestationTypes []string `yaml:"attestation-types" json:"attestation-types" mapstructure:"attestation-types"`
+	// AttestationEcosystem is an optional hint to tell the attestation merging
+	// logic which package ecosystem to resolve (e.g. "python"). When provided
+	// this avoids relying on attestation filename formats or other heuristics.
+	AttestationEcosystem string `yaml:"attestation-ecosystem" json:"attestation-ecosystem" mapstructure:"attestation-ecosystem"`
 	// high-level cataloger configuration
 	Catalogers        []string            `yaml:"-" json:"catalogers" mapstructure:"catalogers"` // deprecated and not shown in yaml output
 	DefaultCatalogers []string            `yaml:"default-catalogers" json:"default-catalogers" mapstructure:"default-catalogers"`
@@ -228,6 +232,10 @@ func (cfg *Catalog) AddFlags(flags clio.FlagSet) {
 
 	flags.StringVarP(&cfg.Platform, "platform", "",
 		"an optional platform specifier for container image sources (e.g. 'linux/arm64', 'linux/arm64/v8', 'arm64', 'linux')")
+
+	// an optional hint to tell attestation resolver which ecosystem to resolve
+	// e.g., --pkg python
+	flags.StringVarP(&cfg.AttestationEcosystem, "pkg", "", "an optional ecosystem hint for attestation resolution (e.g. 'python')")
 
 	flags.StringArrayVarP(&cfg.Exclusions, "exclude", "",
 		"exclude paths from being scanned using a glob expression")

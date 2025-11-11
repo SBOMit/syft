@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"os"
 	"reflect"
+	"regexp"
 	"strings"
 
 	"github.com/hashicorp/go-multierror"
@@ -21,12 +22,14 @@ import (
 	"github.com/anchore/syft/cmd/syft/internal/ui"
 	"github.com/anchore/syft/internal"
 	"github.com/anchore/syft/internal/attestation"
+	"github.com/anchore/syft/internal/attestation/network"
 	"github.com/anchore/syft/internal/bus"
 	internalfile "github.com/anchore/syft/internal/file"
 	"github.com/anchore/syft/internal/log"
 	"github.com/anchore/syft/internal/task"
 	"github.com/anchore/syft/syft"
 	"github.com/anchore/syft/syft/file"
+	"github.com/anchore/syft/syft/pkg"
 	"github.com/anchore/syft/syft/sbom"
 	"github.com/anchore/syft/syft/source"
 	"github.com/anchore/syft/syft/source/sourceproviders"
@@ -258,8 +261,26 @@ func runScan(ctx context.Context, id clio.Identification, opts *scanOptions, use
 				}
 			}
 
-			// resolve candidate paths to python packages and leftover files
-			pkgsFromAtt, filesFromAtt := attestation.ResolvePathsToPythonPackages(candidatePaths)
+			// resolve candidate paths to packages and leftover files
+			var pkgsFromAtt []pkg.Package
+			var filesFromAtt []file.Metadata
+
+			// can we removed
+			eco := strings.ToLower(strings.TrimSpace(opts.Catalog.AttestationEcosystem))
+
+			// parse network attestations (downloads)
+			// convert typed attestations to a slice of data maps expected by the network parser
+			var typedData []map[string]interface{}
+			for _, t := range typed {
+				typedData = append(typedData, t.Data)
+			}
+			downloads := network.ParseNetworkDownloads(typedData)
+
+			// resolve candidate paths to packages and attach downloads via the coordinator
+			pkgsFromAtt, filesFromAtt = attestation.ResolveAttestationEvidence(candidatePaths, downloads, eco)
+
+			// extract any file digests reported in attestations (materials/openedfiles)
+			digestsMap := attestation.ExtractAttestationFileDigests(typed)
 
 			// merge packages
 			var pkgNoChange, pkgConflict, pkgAdded int
@@ -269,6 +290,7 @@ func runScan(ctx context.Context, id clio.Identification, opts *scanOptions, use
 				existing := s.Artifacts.Packages.PackagesByName(p.Name)
 				matchedSameVersion := false
 				conflictFound := false
+				var firstConflictingVersion string
 				for _, ex := range existing {
 					if ex.Type == p.Type {
 						if ex.Version == p.Version {
@@ -277,6 +299,10 @@ func runScan(ctx context.Context, id clio.Identification, opts *scanOptions, use
 						} else {
 							// name and type match, but version does not: conflict
 							conflictFound = true
+							// capture the version we are replacing for reporting
+							if firstConflictingVersion == "" {
+								firstConflictingVersion = ex.Version
+							}
 							s.Artifacts.Packages.Delete(ex.ID())
 						}
 					}
@@ -289,7 +315,9 @@ func runScan(ctx context.Context, id clio.Identification, opts *scanOptions, use
 
 				if conflictFound {
 					pkgConflict++
-					// prefer attestation package
+					// prefer attestation package; annotate package metadata with previous syft findings
+					p.Metadata = map[string]interface{}{"attestation_conflict": map[string]string{"syft_version": firstConflictingVersion}}
+					log.Infof("Conflict for package %s: syft reported version=%s, attestation reports version=%s", p.Name, firstConflictingVersion, p.Version)
 					s.Artifacts.Packages.Add(p)
 					continue
 				}
@@ -303,11 +331,60 @@ func runScan(ctx context.Context, id clio.Identification, opts *scanOptions, use
 			if s.Artifacts.FileMetadata == nil {
 				s.Artifacts.FileMetadata = make(map[file.Coordinates]file.Metadata)
 			}
-
+			// MOVE THIS TO FILE HANDLER
 			// merge files: if path exists in SBOM as a package-owned file, consider enrichment/conflict
-			var fileAdded, fileEnrich, fileConflict int
+			var fileAdded, fileEnrich, fileConflict, fileSkipped int
+			// build a list of package-owned directory roots to avoid adding files that belong to packages
+			var pkgRoots []string
+			for _, pp := range s.Artifacts.Packages.Sorted() {
+				added := false
+				for _, l := range pp.Locations.ToSlice() {
+					if l.RealPath != "" {
+						pkgRoots = append(pkgRoots, l.RealPath)
+						added = true
+					}
+				}
+				// if the package has no explicit locations, add common package root hints
+				if !added {
+					// python hints
+					pkgRoots = append(pkgRoots, "/site-packages/"+pp.Name)
+					pkgRoots = append(pkgRoots, "/dist-packages/"+pp.Name)
+					// go hints
+					if pp.Type == pkg.GoModulePkg {
+						pkgRoots = append(pkgRoots, "/pkg/mod/"+pp.Name)
+						pkgRoots = append(pkgRoots, "/go/pkg/mod/"+pp.Name)
+						pkgRoots = append(pkgRoots, "/vendor/"+pp.Name)
+					}
+				}
+			}
+
 			for _, f := range filesFromAtt {
-				coord := file.NewCoordinates(string(f.Path), "")
+				realPath := string(f.Path)
+
+				// if this file is under any known package root, skip adding it to top-level file metadata
+				owned := false
+				for _, root := range pkgRoots {
+					if root == "" {
+						continue
+					}
+					rl := strings.ToLower(realPath)
+					rootl := strings.ToLower(root)
+					if rl == rootl || strings.HasPrefix(rl, rootl+"/") || strings.Contains(rl, rootl+"/") {
+						owned = true
+						break
+					}
+				}
+				if owned {
+					fileSkipped++
+					continue
+				}
+
+				coord := file.NewCoordinates(realPath, "")
+				// ensure file digests map exists
+				if s.Artifacts.FileDigests == nil {
+					s.Artifacts.FileDigests = make(map[file.Coordinates][]file.Digest)
+				}
+
 				if existing, ok := s.Artifacts.FileMetadata[coord]; ok {
 					// simple enrichment detection: if hashes differ or other metadata differs, treat as enrichment/conflict
 					// For now, if the existing entry equals path, treat as enrichment (update metadata); otherwise treat as conflict and prefer attestation
@@ -322,12 +399,50 @@ func runScan(ctx context.Context, id clio.Identification, opts *scanOptions, use
 					s.Artifacts.FileMetadata[coord] = f
 					fileAdded++
 				}
+
+				// attach digests reported by attestations (if any)
+				if digestsMap != nil {
+					if dlist, ok := digestsMap[realPath]; ok && len(dlist) > 0 {
+						s.Artifacts.FileDigests[coord] = appendUniqueFileDigests(s.Artifacts.FileDigests[coord], dlist)
+					}
+				}
 			}
 
-			// output a short report to stdout
-			fmt.Fprintf(os.Stdout, "Attestation merge summary:\n")
-			fmt.Fprintf(os.Stdout, "  packages - added: %d, unchanged: %d, conflicts: %d\n", pkgAdded, pkgNoChange, pkgConflict)
-			fmt.Fprintf(os.Stdout, "  files - added: %d, enriched: %d, conflicts: %d\n", fileAdded, fileEnrich, fileConflict)
+			log.Infof("Attestation merge summary:")
+			log.Infof("  packages - added: %d, unchanged: %d, conflicts: %d", pkgAdded, pkgNoChange, pkgConflict)
+			log.Infof("  files - added: %d, enriched: %d, conflicts: %d, skipped-owned-by-package: %d", fileAdded, fileEnrich, fileConflict, fileSkipped)
+		}
+	}
+
+	// MOVE THIS TO FILE HANDLER
+	// Removing package metadata files (e.g., *.dist-info/licenses/*, *.egg-info/*) from the top-level
+	// FileMetadata when a corresponding package exists in the SBOM. Keep binary/shared objects (.so) and other
+	// non-metadata files. This avoids listing license and other metadata files as separate file artifacts when
+	// the package itself is already recorded.
+	distMetaRe := regexp.MustCompile(`(?i)(?:/|^)([^/]+?)-[^/]*\.(?:dist-info|egg-info)/`)
+	// build a set of package names (lowercased)
+	pkgSet := map[string]struct{}{}
+	for _, pp := range s.Artifacts.Packages.Sorted() {
+		pkgSet[strings.ToLower(pp.Name)] = struct{}{}
+	}
+
+	for coord := range s.Artifacts.FileMetadata {
+		realPath := coord.RealPath
+		if realPath == "" {
+			continue
+		}
+		// keep shared libraries and other non-metadata files
+		lp := strings.ToLower(realPath)
+		if strings.HasSuffix(lp, ".so") || strings.Contains(lp, ".so.") {
+			continue
+		}
+
+		if m := distMetaRe.FindStringSubmatch(realPath); len(m) >= 2 {
+			pkgName := strings.ToLower(m[1])
+			if _, ok := pkgSet[pkgName]; ok {
+				// remove this file metadata since the owning package exists
+				delete(s.Artifacts.FileMetadata, coord)
+			}
 		}
 	}
 
@@ -336,6 +451,24 @@ func runScan(ctx context.Context, id clio.Identification, opts *scanOptions, use
 	}
 
 	return nil
+}
+
+// appendUniqueFileDigests appends any digests from toAdd that are not already present in existing.
+// Uniqueness is determined by Algorithm+Value.
+func appendUniqueFileDigests(existing []file.Digest, toAdd []file.Digest) []file.Digest {
+	seen := make(map[string]struct{}, len(existing))
+	for _, d := range existing {
+		seen[d.Algorithm+"|"+d.Value] = struct{}{}
+	}
+	for _, d := range toAdd {
+		key := d.Algorithm + "|" + d.Value
+		if _, ok := seen[key]; ok {
+			continue
+		}
+		existing = append(existing, d)
+		seen[key] = struct{}{}
+	}
+	return existing
 }
 
 func getSource(ctx context.Context, opts *options.Catalog, userInput string, sources ...string) (source.Source, error) {
